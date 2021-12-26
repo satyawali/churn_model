@@ -1,4 +1,0 @@
-# cat .slugignore
-
-heroku plugins:install heroku-builds
-heroku builds:cache:purge

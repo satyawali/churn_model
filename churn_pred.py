@@ -23,7 +23,7 @@ def predict():
     EstimatedSalary = int(request.form.get('EstimatedSalary'))
     #print(CreditScore, Geography,Gender,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary)
     print(type(int(CreditScore)))
-    test_model = models.load_model('churn_modelling.h5')
+    test_model = models.load_model('churn_modelling_new.h5')
     result = test_model.predict([[CreditScore,Geography,Gender,Age,Tenure,Balance,NumOfProducts,HasCrCard,IsActiveMember,EstimatedSalary,1]])
     #result = test_model.predict([[1,12,3,14,5,6,2,10,3,12,11]])
     #if (result < 0.5): 
